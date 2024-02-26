@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Rushika_Solutions.Models;
 
 namespace Rushika_Solutions.Data
 {
@@ -9,5 +10,8 @@ namespace Rushika_Solutions.Data
             : base(options)
         {
         }
+
+        public DbSet<Employee> Employees { get; set; }
+
     }
 }
